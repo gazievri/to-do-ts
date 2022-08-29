@@ -1,0 +1,12 @@
+.header {
+    min-width: 340px;
+    min-height: 100px;
+    background-image: url('../../images/header.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+

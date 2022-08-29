@@ -1,0 +1,6 @@
+.add-todo {
+    margin: 0 auto 1rem;
+    align-items: center;
+    display: flex;
+    column-gap: 5px;
+}

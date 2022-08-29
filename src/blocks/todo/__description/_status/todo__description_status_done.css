@@ -1,0 +1,4 @@
+.todo__description_status_done {
+    text-decoration: line-through;
+    color: grey;
+}

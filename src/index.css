@@ -1,13 +1,19 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('./vendor/normalize.css');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@import url('./blocks/header/header.css');
+@import url('./blocks/header/__title/header__title.css');
+@import url('./blocks/main/main.css');
+@import url('./blocks/add-todo/add-todo.css');
+@import url('./blocks/todo-list/todo-list.css');
+
+@import url('./blocks/todo/todo.css');
+@import url('./blocks/todo/__description/todo__description.css');
+@import url('./blocks/todo/__edit-btn/todo__edit-btn.css');
+@import url('./blocks/todo/__remove-btn/todo__remove-btn.css');
+@import url('./blocks/todo/__description/todo__description.css');
+@import url('./blocks/todo/__description/_status/todo__description_status_done.css');
+@import url('./blocks/add-todo/add-todo.css');
+
+
+
+
