@@ -1,46 +1,38 @@
-# Getting Started with Create React App
+# 📜 TO DO LIST TS
+Проект **To Do List TS** представляет собой приложение, с помощью которого можно составлять список задач/пукупок.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Функционал проекта
+Пользователю доступен следующий функционал:
+- добавление задач в список;
+- удаление задач из списка;
+- редактирование задачи;
+- контроль выполнения задач (проставление статусы "выпоненно");
+- сохранение списка задач и выбранной темы в LocalStorage.
 
-## Available Scripts
+Наглядно c функционалом проекта **To Do List TS** можно познакомиться в [видео](https://youtu.be/4qoeCTC6EdE).
+<img width="1432" alt="todolist" src="https://user-images.githubusercontent.com/96244317/187025801-3401db08-fed6-4bd8-9d9f-901155483d5b.png">
 
-In the project directory, you can run:
+## Технологический стек
+При создании проекта использовался следующий стек технологий: HTML, CSS, JS, React.js, ReactHooks, функциональные компоненты React.
+При стилизации использовалась БЭМ-методология.
 
-### `npm start`
+## Работа с проектом
+Для запуска проекта, пожалуйста, выполните следующие действия:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Склонировать проект на ваш компьютер с [Github](https://github.com/gazievri/to-do-ts.git) с помощью команды:
+```
+git clone https://github.com/gazievri/to-do-ts.git
+```
+2. Установить зависимости:
+```
+npm install
+```
+3. Запустить проект:
+```
+npm start
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Ссылки на проект
+Исходный код проекта доступен по [ссылке](https://github.com/gazievri/to-do-ts).
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Описание тестового задания доступно по [ссылке](https://terra-school.notion.site/Front-cb556515b71746ab8c5522fd43596dac).
