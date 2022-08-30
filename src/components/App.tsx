@@ -5,6 +5,7 @@ import { ITodoList } from './TodoList';
 
 
 const App: React.FC = () => {
+    
     const [value, setValue] = useState('');
     const [todos, setTodos] = useState<ITodo[]>([]);
     const inputRef = useRef<HTMLInputElement>(null);
@@ -57,10 +58,22 @@ const App: React.FC = () => {
     }
 
     useEffect(() => {
+        const userTodos = JSON.parse(localStorage.getItem("todos") || "")
+
+        if ( userTodos.length !== 0) {
+            setTodos(userTodos);
+        };
+    }, [])
+
+    useEffect(() => {
         if (inputRef.current) {
             inputRef.current.focus();
         }
     }, [])
+
+    useEffect(() => {
+        localStorage.setItem('todos', JSON.stringify(todos));
+    }, [todos])
 
     return (
         <div className='main'>
