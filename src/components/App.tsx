@@ -44,6 +44,18 @@ const App: React.FC = () => {
         }));
     }
 
+    const updateTodo = (id: number, title: string) => {
+        if (title) {
+            setTodos(todos.map(todo => {
+            if (todo.id !== id) return todo;
+            return {
+                ...todo,
+                title: title,
+            }
+        }));
+        }
+    }
+
     useEffect(() => {
         if (inputRef.current) {
             inputRef.current.focus();
@@ -57,7 +69,7 @@ const App: React.FC = () => {
                 <input value={value} onChange={handleChange} onKeyDown={handleKeyDown} ref={inputRef} />
                 <button onClick={addTodo}>Add</button>
             </div>
-            <ITodoList items={todos} removeTodo={removeTodo} toggleTodo={toggleTodo} />
+            <ITodoList items={todos} removeTodo={removeTodo} toggleTodo={toggleTodo} updateTodo={updateTodo} />
         </div> 
     )
 };

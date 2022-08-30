@@ -1,8 +1,10 @@
 .todo-list {
     align-self: center;
-    width: 50%;
+    min-width: 20rem;
+    min-height: 20rem;
     padding: 10px;
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+    background-color: whitesmoke;
 }
