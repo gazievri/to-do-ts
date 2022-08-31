@@ -1,7 +1,7 @@
 .header {
     min-width: 340px;
     min-height: 100px;
-    background-image: url('../../images/header.jpg');
+    background-image: url('../images/header.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -10,3 +10,11 @@
     margin-bottom: 1rem;
 }
 
+.header__title{
+    margin: 0;
+    font-size: 2rem;
+    color: whitesmoke;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}

@@ -1,18 +1,6 @@
-@import url('./vendor/normalize.css');
-@import url('./blocks/header/header.css');
-@import url('./blocks/header/__title/header__title.css');
-@import url('./blocks/main/main.css');
-@import url('./blocks/add-todo/add-todo.css');
-@import url('./blocks/todo-list/todo-list.css');
-@import url('./blocks/todo/todo.css');
-@import url('./blocks/todo/__description/todo__description.css');
-@import url('./blocks/todo/__edit-btn/todo__edit-btn.css');
-@import url('./blocks/todo/__remove-btn/todo__remove-btn.css');
-@import url('./blocks/todo/__description/todo__description.css');
-@import url('./blocks/todo/__description/_status/todo__description_status_done.css');
-@import url('./blocks/add-todo/add-todo.css');
-@import url('./blocks/todo/__input/todo__input.css');
-
-
+@import url('./components/TodoItem.css');
+@import url('./components/TodoList.css');
+@import url('./layout/Header.css');
+@import url('./App.css');
 
 

@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
-import { Header } from '../layout/Header';
-import { ITodo } from '../types/data';
-import { ITodoList } from './TodoList';
+import { Header } from './layout/Header';
+import { ITodo } from './types/data';
+import { ITodoList } from './components/TodoList';
 
 
 const App: React.FC = () => {
@@ -58,11 +58,15 @@ const App: React.FC = () => {
     }
 
     useEffect(() => {
-        const userTodos = JSON.parse(localStorage.getItem("todos") || "")
 
-        if ( userTodos.length !== 0) {
-            setTodos(userTodos);
-        };
+        if (localStorage["todos"]) {
+            const userTodos = JSON.parse(localStorage.getItem("todos") || "")
+
+            if ( userTodos.length !== 0) {
+                setTodos(userTodos);
+            };
+        }
+
     }, [])
 
     useEffect(() => {
